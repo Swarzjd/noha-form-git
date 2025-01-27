@@ -26,14 +26,29 @@ header {
 label,
 input,
 textarea{
+    width: 300px;
     display: flex;
     flex-flow: column;
     justify-self: flex-start;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 10px ;
+    border: rgba(177, 177, 177, 0.792) solid;
+}
+
+#messagetext{
+    text-decoration: underline;
+    border-radius: 0;
+    width: 200px;
+    background-color: #fff;
+}
+
+#sendForm:hover {
+    background-color: rgba(78, 78, 196, 0.874);
 }
 
 textarea {
     margin-bottom: 5px;
+    resize: none;
 }
 
 .tooltip {
@@ -42,10 +57,11 @@ textarea {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 210px;
+    background-color: rgba(0, 0, 0, 0.614);
     color: #fff;
-    text-align: center;
+    right: -220px;
+    top: -10px;
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
