@@ -24,7 +24,6 @@ header {
     width: 300px;
 }
 
-/* Style des éléments du formulaire */
 label,
 input,
 textarea{
@@ -53,7 +52,6 @@ textarea {
     resize: none;
 }
 
-/* Tooltip */
 .tooltip {
     position: relative;
 }
