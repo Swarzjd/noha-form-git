@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
     <title>Formulaire de contact</title>
 </head>
 
@@ -29,10 +30,16 @@
                 </div>
                 <label id="messagetext" for="textPlace">Message</label>
                 <textarea name="textPlace" id="textPlace" placeholder="Write your text.."></textarea>
-                <input id="sendForm" type="submit" value="Send the form">
+                <!-- Case à cocher animée -->
+                <label class="checkbox-label">
+                    <input type="checkbox" id="gdpr" name="gdpr">
+                    <span class="checkmark"></span>
+                    J'accepte les conditions RGPD
+                </label>
+
+                <input type="submit" value="Send the form">
             </form>
         </div>
-
     </div>
 </body>
 
