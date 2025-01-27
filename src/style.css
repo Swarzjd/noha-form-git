@@ -21,20 +21,15 @@ header {
 .formstyled {
     max-width: 300px;
     width: 300px;
-
 }
 
 label,
 input,
-textarea {
+textarea{
     display: flex;
     flex-flow: column;
     justify-self: flex-start;
-}
-
-input,
-textarea {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 textarea {
@@ -43,8 +38,6 @@ textarea {
 
 .tooltip {
     position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
