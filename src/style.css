@@ -1,0 +1,76 @@
+/* Style global */
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+}
+
+header {
+    height: 50px;
+    border-bottom: 1px black solid;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 1000px;
+    width: auto;
+    max-height: 100vh;
+}
+
+.formstyled {
+    max-width: 300px;
+    width: 300px;
+}
+
+/* Style des éléments du formulaire */
+label,
+input,
+textarea{
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-self: flex-start;
+    margin-top: 5px;
+    border-radius: 10px ;
+    border: rgba(177, 177, 177, 0.792) solid;
+}
+
+#messagetext{
+    text-decoration: underline;
+    border-radius: 0;
+    width: 200px;
+    background-color: #fff;
+}
+
+#sendForm:hover {
+    background-color: rgba(78, 78, 196, 0.874);
+}
+
+textarea {
+    margin-bottom: 5px;
+    resize: none;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 210px;
+    background-color: rgba(0, 0, 0, 0.614);
+    color: #fff;
+    right: -220px;
+    top: -10px;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

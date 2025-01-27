@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire de contact</h1>
+    </header>
+    <div class="wrapper">
+        <div class="formstyled">
+            <form action="">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Name..">
+                    <input type="text" id="surname" name="surname" placeholder="Surname..">
+                </div>
+                <div class="tooltip">
+                    <input type="email" name="email" id="email" placeholder="Email..">
+                    <span class="tooltiptext">Write a right email</span>
+                </div>
+                <div class="tooltip">
+                    <input type="tel" name="telNumber" id="telNumber" placeholder="Phone number..">
+                    <span class="tooltiptext">Write a right Phone number</span>
+                </div>
+                <label id="messagetext" for="textPlace">Message</label>
+                <textarea name="textPlace" id="textPlace" placeholder="Write your text.."></textarea>
+                <!-- Case à cocher animée -->
+                <label class="checkbox-label">
+                    <input type="checkbox" id="gdpr" name="gdpr">
+                    <span class="checkmark"></span>
+                    <p>J'accepte les conditions RGPD</p>
+                </label>
+                <input id="sendForm" type="submit" value="Send the form">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
