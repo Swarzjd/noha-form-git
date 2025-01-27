@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+}
+
+header {
+    height: 50px;
+    border-bottom: 1px black solid;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 1000px;
+    width: auto;
+    max-height: 100vh;
+}
+
+.formstyled {
+    max-width: 300px;
+    width: 300px;
+
+}
+
+label,
+input,
+textarea {
+    display: flex;
+    flex-flow: column;
+    justify-self: flex-start;
+}
+
+input,
+textarea {
+    padding-bottom: 10px;
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
